@@ -1,0 +1,147 @@
+.about {
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 200px;
+
+    .about_item {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.36px;
+        text-align: center;
+        color: #3858D6;
+    }
+
+    .about_title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 43.57px;
+        text-align: center;
+        color: #1E1D1D;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .about_card_content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+
+        .about_card {
+            width: 524px;
+            height: 239px;
+            background: #F6F6F6;
+            border-radius: 10px;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+
+            .about_right {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .about_rigt_text1 {
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 29.05px;
+                    text-align: left;
+                    color: #1E1D1D;
+                }
+
+                .about_rigt_text2 {
+                    max-width: 255px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 19.36px;
+                    text-align: left;
+                    color: #8B8E99;
+                }
+
+                .about_star_con {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1120px) {
+    .about {
+        padding: 20px;
+
+        .about_card_content {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width:565px) {
+    .about {
+        .about_title {
+            font-size: 26px;
+            line-height: normal;
+        }
+
+        .about_card_content {
+            .about_card {
+                padding: 15px;
+                width: 100%;
+
+                .about_img {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .about {
+        .about_title {
+            font-size: 22px;
+            line-height: normal;
+        }
+
+        .about_card_content {
+            .about_card {
+                padding: 15px;
+                width: 100%;
+                flex-direction: column;
+                height: auto;
+                align-items: center;
+                justify-content: center;
+
+                .about_right {
+
+                    .about_rigt_text1,
+                    .about_rigt_text2 {
+                        text-align: center;
+                    }
+
+                    .about_star_con {
+                        justify-content: center;
+                    }
+                }
+
+                .about_img {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+}

@@ -2,7 +2,9 @@ import "./Footer.scss"
 
 const Footer = () => {
     return (
-        <div>Footer</div>
+        <div className="footer_bg">
+            <p className="footer_item">Copyright @ 2022 | Mohid</p>
+        </div>
     )
 }
 
